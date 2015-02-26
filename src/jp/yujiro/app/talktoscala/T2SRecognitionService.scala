@@ -9,7 +9,7 @@ import android.widget.Toast
 import scala.collection.JavaConversions._
 
 /**
- * 今後の参a考に取っておく
+ * 今後の参考に取っておく
  * 現在は使用していない
  */
 class T2SRecognitionService extends RecognitionService {

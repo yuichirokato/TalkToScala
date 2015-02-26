@@ -10,9 +10,6 @@ class MainActivity extends TypedActivity {
 
   lazy val talkBtn = findView(TR.btn_talk)
 
-  val API_KEY = """AIzaSyA2tGfHdWOUvwc06AK2z-KfVLSKDA0253g"""
-  val youtubeURL = s"https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics,status&id=xKVcVSYmesU&key=AIzaSyBFe3CmiGLGaM5B4WLi5ded9nG0GSDQLYA"
-
   override def onCreate(bundle: Bundle) {
     super.onCreate(bundle)
     requestWindowFeature(Window.FEATURE_NO_TITLE)

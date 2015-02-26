@@ -12,7 +12,7 @@ object AnalyzeUtils {
   private val IPA_DIC_BASE_FORM_NUM: Int = 0
   private val IPA_DIC_POS_NUM: Int = 4
   private val IPA_DIC_CPOS_NUM: Int = 5
-  val ANARAIZE_URL = "http://133.242.238.252:8080/analyze?text=%s&action_design=%s"
+  val ANARAIZE_URL = "http://your_host:8080/analyze?text=%s&action_design=%s"
 
   def sendAnalayzeRequest(context: Context, params: Map[String, String]): Unit = {
     val wrapper = new T2SVolleyWrapper(context)

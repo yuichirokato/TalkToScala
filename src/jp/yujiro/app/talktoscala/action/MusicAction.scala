@@ -8,9 +8,9 @@ import jp.yujiro.app.talktoscala.implicit_conversions.T2SConversions._
 
 object MusicAction {
 
-  private val SEARCH_MUSIC_URL = "http://133.242.238.252:8080/music_search?status=favorite"
+  private val SEARCH_MUSIC_URL = "http://your_host:8080/music_search?status=favorite"
   private val SEARCH_YOUTUBE_URL = "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics,status&id=%s&key=%s"
-  val API_KEY = "AIzaSyBFe3CmiGLGaM5B4WLi5ded9nG0GSDQLYA"
+  val API_KEY = "your_api_key"
 
   def searchMusic(context: Context) = {
     new T2SVolleyWrapper(context).sendRequest(SEARCH_MUSIC_URL) { json =>
